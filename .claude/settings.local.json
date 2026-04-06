@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:preview.colorlib.com)",
+      "Bash(npx create-next-app@latest:*)"
+    ]
+  }
+}
