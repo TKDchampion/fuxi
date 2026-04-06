@@ -27,14 +27,16 @@ export default function HomePage() {
         <AboutSection />
         <StatsSection />
         <PeopleWeHelpSection />
-        <TestimonialsSection />
         <WorkingProcessSection />
         <AttorneysSection />
-        <CaseStudiesSection />
+        {/* <CaseStudiesSection /> */}
         <ContactSection />
       </main>
       <Footer />
-      <AppointmentModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      <AppointmentModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
     </>
   );
 }

@@ -44,13 +44,19 @@ export default function PeopleWeHelpSection() {
 
             <div className="space-y-8">
               {items.map((item) => (
-                <div key={item.title} className="flex items-start gap-5 flex-row-reverse">
-                  <div className="flex items-center justify-center w-12 h-12 bg-[#f5ede0] rounded-full shrink-0">
-                    <Scale className="w-6 h-6 text-[#b99566]" />
+                <div
+                  key={item.title}
+                  className="flex items-start gap-5 flex-row-reverse">
+                  <div className="flex items-center justify-center w-[80px] h-[80px] bg-[#f5ede0] rounded-full shrink-0">
+                    <Scale className="w-[40px] h-[40px] text-[#b99566]" />
                   </div>
                   <div className="text-right">
-                    <h3 className="text-lg font-bold text-[#1a1a2e] mb-2">{item.title}</h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+                    <h3 className="text-lg font-bold text-[#1a1a2e] mb-2">
+                      {item.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      {item.desc}
+                    </p>
                   </div>
                 </div>
               ))}

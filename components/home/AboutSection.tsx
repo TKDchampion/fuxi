@@ -5,9 +5,9 @@ export default function AboutSection() {
   return (
     <section className="py-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row -mx-4 sm:-mx-6 lg:-mx-8">
+        <div className="flex flex-col md:flex-row">
           {/* Image / Video */}
-          <div className="md:w-5/12 relative min-h-[400px] md:min-h-[500px]">
+          <div className="md:w-5/12 relative min-h-[400px] md:min-h-[500px] overflow-hidden rounded-sm">
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{

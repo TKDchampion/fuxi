@@ -1,4 +1,3 @@
-
 const attorneys = [
   {
     img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80",
@@ -39,7 +38,8 @@ export default function AttorneysSection() {
             Meet our attorneys
           </h2>
           <p className="text-gray-600 max-w-xl mx-auto">
-            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts.
           </p>
         </div>
 
@@ -53,23 +53,15 @@ export default function AttorneysSection() {
                   className="absolute inset-0 bg-cover bg-center bg-top group-hover:scale-105 transition-transform duration-500"
                   style={{ backgroundImage: `url(${a.img})` }}
                 />
-                {/* Hover overlay with social links */}
-                <div className="absolute inset-0 bg-[#b99566]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3">
-                  {["𝕏", "f", "G+", "ig"].map((icon) => (
-                    <a
-                      key={icon}
-                      href="#"
-                      className="w-9 h-9 rounded-full bg-white/20 hover:bg-white flex items-center justify-center transition-colors text-white hover:text-[#b99566] text-xs font-bold"
-                    >
-                      {icon}
-                    </a>
-                  ))}
-                </div>
               </div>
 
               {/* Info */}
-              <h3 className="text-lg font-bold text-[#1a1a2e] mb-1">{a.name}</h3>
-              <span className="block text-sm text-[#b99566] font-medium mb-2">{a.role}</span>
+              <h3 className="text-lg font-bold text-[#1a1a2e] mb-1">
+                {a.name}
+              </h3>
+              <span className="block text-sm text-[#b99566] font-medium mb-2">
+                {a.role}
+              </span>
               <p className="text-gray-600 text-sm leading-relaxed">{a.bio}</p>
             </div>
           ))}
