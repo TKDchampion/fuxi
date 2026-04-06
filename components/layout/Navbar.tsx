@@ -1,15 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import { Scale, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useSectionRefs, SectionKey } from "@/context/SectionRefsContext";
+import Image from "next/image";
 
 const navLinks: { label: string; section: SectionKey }[] = [
-  { label: "Home", section: "home" },
-  { label: "About", section: "about" },
-  { label: "Practice Areas", section: "practice" },
-  { label: "Attorneys", section: "attorneys" },
-  { label: "Contact", section: "contact" },
+  { label: "首頁", section: "home" },
+  { label: "服務項目", section: "practice" },
+  { label: "關於伏曦", section: "about" },
+  { label: "伏曦團隊", section: "attorneys" },
+  { label: "聯絡我們", section: "contact" },
 ];
 
 export default function Navbar() {
@@ -32,22 +33,29 @@ export default function Navbar() {
         {/* Logo badge */}
         <button
           onClick={() => scrollToSection("home")}
-          className="logo-badge relative flex-shrink-0 bg-[#b99566] w-[132px] h-[74px] flex flex-col items-center justify-center p-4 text-white z-10 mr-8">
+          className="logo-badge relative flex-shrink-0 bg-[#b99566] min-w-[132px] h-[74px] flex flex-col items-center justify-center p-4 text-white z-10 mr-8">
           <span className="font-bold text-base tracking-[3px] uppercase leading-tight">
-            PRIMELAW
+            伏曦法律事務所
           </span>
-          <Scale className="w-7 h-7 opacity-90 z-10 absolute bottom-[-7px]" />
+          {/* <Scale className="w-7 h-7 opacity-90 z-10 absolute bottom-[-7px]" /> */}
+          <Image
+            src="/fuxi-logo.png"
+            alt="hero"
+            width={36}
+            height={36}
+            className="z-10 absolute bottom-[-15px]"
+          />
         </button>
 
         {/* Desktop nav links */}
-        <ul className="hidden lg:flex items-center flex-1">
+        <ul className="hidden lg:flex items-center justify-end flex-1">
           {navLinks.map((link) => {
             const active = activeSection === link.section;
             return (
               <li key={link.section}>
                 <button
                   onClick={() => scrollToSection(link.section)}
-                  className={`px-4 py-2 text-xs font-bold uppercase tracking-[1.5px] transition-colors duration-200 ${
+                  className={`px-4 py-2 text-sm font-bold uppercase tracking-[1.5px] transition-colors duration-200 ${
                     active
                       ? "text-[#b99566]"
                       : "text-gray-700 hover:text-[#b99566]"

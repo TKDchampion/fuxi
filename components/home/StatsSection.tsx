@@ -3,10 +3,10 @@
 import { useEffect, useRef, useState } from "react";
 
 const stats = [
-  { number: 18000, label: "Trusted Clients" },
-  { number: 1000, label: "Solved Cases" },
-  { number: 1230, label: "Awards Won" },
-  { number: 800, label: "Winning Cases" },
+  { number: 60, label: "服務客戶" },
+  { number: 60, label: "刑事案件處理" },
+  { number: 60, label: "民事案件處理" },
+  { number: 60, label: "勝訴案件" },
 ];
 
 function useCountUp(target: number, isVisible: boolean, duration = 2000) {
@@ -29,14 +29,24 @@ function useCountUp(target: number, isVisible: boolean, duration = 2000) {
   return count;
 }
 
-function StatItem({ number, label, isVisible }: { number: number; label: string; isVisible: boolean }) {
+function StatItem({
+  number,
+  label,
+  isVisible,
+}: {
+  number: number;
+  label: string;
+  isVisible: boolean;
+}) {
   const count = useCountUp(number, isVisible);
   return (
     <div className="text-center px-6">
       <strong className="block text-4xl md:text-5xl font-bold text-white mb-2">
-        {count.toLocaleString()}
+        {count.toLocaleString()}+
       </strong>
-      <span className="text-gray-300 text-sm uppercase tracking-wider">{label}</span>
+      <span className="text-gray-300 text-sm uppercase tracking-wider">
+        {label}
+      </span>
     </div>
   );
 }
@@ -47,8 +57,10 @@ export default function StatsSection() {
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) setIsVisible(true); },
-      { threshold: 0.3 }
+      ([entry]) => {
+        if (entry.isIntersecting) setIsVisible(true);
+      },
+      { threshold: 0.3 },
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
@@ -61,8 +73,7 @@ export default function StatsSection() {
       style={{
         backgroundImage:
           "url(https://images.unsplash.com/photo-1436450412740-6b988f486c6b?w=1600&q=80)",
-      }}
-    >
+      }}>
       <div className="absolute inset-0 bg-[#1a1a2e]/80" />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -72,14 +83,19 @@ export default function StatsSection() {
               Some
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-white">
-              Interesting Facts
+              實際數據
             </h2>
           </div>
 
           {/* Counters */}
           <div className="lg:w-8/12 grid grid-cols-2 lg:grid-cols-4 gap-8 w-full">
             {stats.map((s) => (
-              <StatItem key={s.label} number={s.number} label={s.label} isVisible={isVisible} />
+              <StatItem
+                key={s.label}
+                number={s.number}
+                label={s.label}
+                isVisible={isVisible}
+              />
             ))}
           </div>
         </div>

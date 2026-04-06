@@ -1,16 +1,17 @@
 import { Scale } from "lucide-react";
+import Image from "next/image";
 
 const items = [
   {
-    title: "Fight for Justice",
+    title: "刑事陪同偵訊",
     desc: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.",
   },
   {
-    title: "Best Case Strategy",
+    title: "訴訟與非訟案件委托",
     desc: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.",
   },
   {
-    title: "Experience Attorneys",
+    title: "企業法律顧問",
     desc: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.",
   },
 ];
@@ -22,13 +23,14 @@ export default function PeopleWeHelpSection() {
         <div className="flex flex-col md:flex-row-reverse -mx-4 sm:-mx-6 lg:-mx-8">
           {/* Image */}
           <div className="md:w-5/12 relative min-h-[400px] md:min-h-[500px]">
-            <div
-              className="absolute inset-0 bg-cover bg-center"
-              style={{
-                backgroundImage:
-                  "url(https://images.unsplash.com/photo-1521791055366-0d553872952f?w=800&q=80)",
-              }}
-            />
+            <div className="absolute inset-0">
+              <Image
+                src="/sheng.jpg"
+                alt="sheng"
+                fill
+                className="object-cover object-center"
+              />
+            </div>
           </div>
 
           {/* Text */}
@@ -38,7 +40,7 @@ export default function PeopleWeHelpSection() {
                 Company Help Intro
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-[#1a1a2e]">
-                The People We Help
+                提供的協助
               </h2>
             </div>
 

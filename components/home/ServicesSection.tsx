@@ -1,34 +1,34 @@
-import { Users, TrendingUp, Pill, Shield } from "lucide-react";
+import { Scale } from "lucide-react";
 
 const services = [
   {
-    icon: <Users className="w-[55px] h-[55px] text-[#b99566]" />,
-    title: "Family Law",
+    icon: <Scale className="w-[55px] h-[55px] text-[#b99566]" />,
+    title: "民事訴訟代理",
+    desc: "處理各類民事訴訟爭議，包含買賣、借貸、侵權、損害賠償、商業糾紛等，提供風險評估與策略規劃，保障您與企業的權益",
+  },
+  {
+    icon: <Scale className="w-[55px] h-[55px] text-[#b99566]" />,
+    title: "家事訴訟代理",
+    desc: "協助離婚、監護權、扶養費、遺產分割與繼承規劃，兼顧法律權益與家庭關係，以細膩溝通陪伴您度過關鍵時刻",
+  },
+  {
+    icon: <Scale className="w-[55px] h-[55px] text-[#b99566]" />,
+    title: "刑事告訴代理與辯護",
+    desc: "本所提供偵查程序及審判程序之告訴代理與辯護，確保程序正義與當事人防禦權、利益之維護",
+  },
+  {
+    icon: <Scale className="w-[55px] h-[55px] text-[#b99566]" />,
+    title: "刑事陪同偵查",
+    desc: "如有遭警方拘提逮補者，本所提供陪同製作警詢筆錄、偵訊陪同之服務，讓您在第一時間有專業人士陪同，並能透過專業律師的協助掌握案情",
+  },
+  {
+    icon: <Scale className="w-[55px] h-[55px] text-[#b99566]" />,
+    title: "非訟事件處理",
     desc: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.",
   },
   {
-    icon: <TrendingUp className="w-[55px] h-[55px] text-[#b99566]" />,
-    title: "Business Law",
-    desc: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.",
-  },
-  {
-    icon: <Pill className="w-[55px] h-[55px] text-[#b99566]" />,
-    title: "Drug Control Law",
-    desc: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.",
-  },
-  {
-    icon: <Shield className="w-[55px] h-[55px] text-[#b99566]" />,
-    title: "Criminal Law",
-    desc: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.",
-  },
-  {
-    icon: <Shield className="w-[55px] h-[55px] text-[#b99566]" />,
-    title: "Criminal Law1",
-    desc: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.",
-  },
-  {
-    icon: <Shield className="w-[55px] h-[55px] text-[#b99566]" />,
-    title: "Criminal Law2",
+    icon: <Scale className="w-[55px] h-[55px] text-[#b99566]" />,
+    title: "企業常年法律顧問",
     desc: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.",
   },
 ];

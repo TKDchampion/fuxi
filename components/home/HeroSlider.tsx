@@ -3,8 +3,8 @@
 const slides = [
   {
     bg: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1600&q=80",
-    title: "Attorneys Fighting For Your Freedom",
-    desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.",
+    title: "伏曦法律事務所",
+    desc: "伏於法理之深處，曦於正義之將明；願以法律為器，以理性為衡，以光明為向。",
   },
 ];
 
@@ -35,11 +35,12 @@ export default function HeroSlider({ onAppointmentClick }: HeroSliderProps) {
               <p className="text-gray-200 text-base md:text-lg mb-8 leading-relaxed">
                 {slide.desc}
               </p>
-              <button
-                onClick={onAppointmentClick}
+              <a
+                href="https://line.me/ti/p/q7uKgBddsr"
+                target="_blank"
                 className="border-2 border-white text-white px-8 py-3 font-semibold hover:bg-white hover:text-[#1a1a2e] transition-all duration-300">
-                Make an Appointment
-              </button>
+                立即諮詢
+              </a>
             </div>
           </div>
         </div>
