@@ -99,8 +99,11 @@ export default function AttorneysSection() {
                 <div className="relative overflow-hidden mb-6 h-64">
                   {a.img ? (
                     <div
-                      className="absolute inset-0 bg-cover bg-center bg-top group-hover:scale-105 transition-transform duration-500"
-                      style={{ backgroundImage: `url(${a.img})` }}
+                      className="absolute inset-0 bg-cover bg-top group-hover:scale-105 transition-transform duration-500"
+                      style={{
+                        backgroundImage: `url(${a.img})`,
+                        backgroundPosition: a.img === "/sheng-blue.jpg" ? "center -30px" : "center top",
+                      }}
                     />
                   ) : (
                     <div className="absolute inset-0 bg-[#d6cfc6] flex items-end justify-center group-hover:scale-105 transition-transform duration-500">
