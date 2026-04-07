@@ -6,10 +6,10 @@ export default function ContactSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row">
           {/* Map placeholder */}
-          <div className="md:w-5/12 min-h-[400px] bg-gray-200 relative overflow-hidden">
+          <div className="md:w-5/12 bg-gray-200 relative overflow-hidden h-[300px] sm:h-[400px] md:h-auto">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.8038498631518!2d121.505714!3d25.040729900000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9b2b2c6965f%3A0xfac3576bdfb7a697!2z5LyP5pum5rOV5b6L5LqL5YuZ5omAKOeOi-aYsee_lOW-i-W4qyk!5e0!3m2!1szh-TW!2stw!4v1775492601552!5m2!1szh-TW!2stw"
-              className="relative inset-0 w-full h-full border-0"
+              className="absolute inset-0 w-full h-full border-0"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="Office location map"
