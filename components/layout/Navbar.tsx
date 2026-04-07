@@ -29,7 +29,7 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md overflow-visible h-[74px]">
-      <div className="max-w-[960px] mx-auto px-4 h-full flex items-center justify-between">
+      <div className="max-w-[1250px] mx-auto px-4 h-full flex items-center justify-between">
         {/* Logo badge */}
         <button
           onClick={() => scrollToSection("home")}
