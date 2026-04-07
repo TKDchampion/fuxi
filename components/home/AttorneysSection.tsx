@@ -6,11 +6,11 @@ import DetailModal, { PersonDetail } from "./DetailModal";
 const attorneys: PersonDetail[] = [
   {
     type: "person",
-    img: "/sheng.jpg",
+    img: "/sheng-blue.jpg",
     name: "王昱翔",
     role: "主持律師",
     intro:
-      "投身法律實務多年，以維護委託人權益為首要信念，擅長以清晰邏輯與同理心協助委託人面對各類法律挑戰。",
+      "王昱翔律師曾協助當事人在工程履約案件中獲得勝訴判決，為當事人省下新臺幣3,000萬元的違約金、更在政府採購履約爭議案中，協助當事人上訴至最高法院，成功讓最高法院發回更審，重為審理。執業過程中，更協助多名當事人取得不起訴處分、無罪判決，為當事人守住清白！",
     background:
       "恆旭森隆商務法律事務所　實習律師\n恆旭森隆商務法律事務所　受僱律師\n文化大學法律系強學班授課講師\n文化大學法律系課輔講師\n銘傳大學勵學班授課講師\n國家委託研究案專案研究人員\n建立高齡金融消費爭議資料庫專案　助理\n公司行號常年法律顧問\n新北市土城區樂利里法律顧問",
     expertise: [
@@ -34,7 +34,7 @@ const attorneys: PersonDetail[] = [
     name: "劉大慶",
     role: "合作律師",
     intro:
-      "現為大慶國際法律事務所主持律師，同時擔任公職補習班民事法講師，著有多本法學著作，並長期投入教學與實務工作。",
+      "劉大慶律師大學畢業即應屆考取律師、法院書記官，並於研究所期間研究契約法爭議(如勞資爭議、消費糾紛、醫療糾紛等)。執業期間，除處理傳統民刑事案件外，主要處理不動產訴訟、繼承遺產等案件，並多次協助委託人達成和解，取得最大利益，同時身兼公職補習班講師，從事民事法教學、掌握實務觀點之變遷，於個案上亦能提供法院之最新看法，以擬定合適之訴訟策略。",
     background:
       "【學歷】\n東吳大學法律系碩士（2022年）\n文化大學法律系學士（2020年）\n\n【經歷】\n高考律師及格（2020年）\n司法特考四等書記官及格（2020年）\n圓邦法律事務所　實習律師\n立勤國際法律事務所　律師\n台北市政府法制局　諮詢律師\n文化大學法律系　兼任講師\n文化、銘傳大學法學加強班講師\n\n【著作】\n《醫療契約責任》，東吳大學碩士論文，2022年\n《民法總則—全彩心智圖表》（修訂），保成，2025年\n《民法物權—全彩心智圖表》（修訂），保成，2025年\n《老師開講—民法物權》，保成，2026年\n《老師開講—民法身分法》，保成，2026年",
     expertise: [
@@ -80,15 +80,12 @@ export default function AttorneysSection() {
           {/* Heading */}
           <div className="text-center mb-14">
             <span className="block text-xs font-bold uppercase tracking-[3px] text-[#b99566] mb-3">
-              Experienced Attorneys
+              FUXI Attorneys
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#1a1a2e] mb-4">
               伏曦專業團隊
             </h2>
-            <p className="text-gray-600 max-w-xl mx-auto">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts.
-            </p>
+            <p className="text-gray-600 max-w-xl mx-auto"></p>
           </div>
 
           {/* Grid */}

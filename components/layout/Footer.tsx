@@ -73,7 +73,7 @@ export default function Footer() {
                 <a
                   href="tel:+886966913152"
                   className="text-sm hover:text-[#b99566] transition-colors">
-                  0966-913-52
+                  0966-913-526
                 </a>
               </div>
             </div>

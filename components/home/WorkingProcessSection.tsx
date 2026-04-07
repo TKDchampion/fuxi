@@ -14,12 +14,10 @@ export default function WorkingProcessSection() {
             Working Process
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
-            我們的工作流程
+            委託流程
           </h2>
           <p className="text-gray-500 max-w-xl mx-auto text-base leading-relaxed">
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia, there live the blind texts. Separated they
-            live in
+            為了讓您的法律煩惱在第一時間得到有效的解決，請您攜帶與您問題相關的所有資料，並立即與我們聯繫預約面談時間，本所將竭盡為您分析並處理法律問題
           </p>
         </div>
 

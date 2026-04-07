@@ -31,7 +31,7 @@ export default function ContactSection() {
             <div className="mb-10 space-y-3">
               <p className="flex gap-3 text-sm">
                 <span className="font-semibold text-[#1a1a2e] w-12">手機:</span>
-                <span className="text-gray-600">0966-913-52 </span>
+                <span className="text-gray-600">0966-913-526 </span>
               </p>
               <p className="flex gap-3 text-sm">
                 <span className="font-semibold text-[#1a1a2e] w-12">Fax:</span>

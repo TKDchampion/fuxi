@@ -4,7 +4,7 @@ const services = [
   {
     icon: <Scale className="w-[55px] h-[55px] text-[#b99566]" />,
     title: "民事訴訟代理",
-    desc: "處理各類民事訴訟爭議，包含買賣、借貸、侵權、損害賠償、商業糾紛等，提供風險評估與策略規劃，保障您與企業的權益",
+    desc: "處理各類民事訴訟爭議，包含買賣借貸、侵權、損害賠償、商業糾紛等，提供風險評估與策略規劃，保障您與企業的權益",
   },
   {
     icon: <Scale className="w-[55px] h-[55px] text-[#b99566]" />,
@@ -24,12 +24,12 @@ const services = [
   {
     icon: <Scale className="w-[55px] h-[55px] text-[#b99566]" />,
     title: "非訟事件處理",
-    desc: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.",
+    desc: "草擬、審閱各式契約；聲請本票裁定、支付命令、臨時管理人及各類強制執行案件",
   },
   {
     icon: <Scale className="w-[55px] h-[55px] text-[#b99566]" />,
     title: "企業常年法律顧問",
-    desc: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.",
+    desc: "由本所擔任公司法律顧問，協助各公司在面臨大小不一的法律決定能做出精準且有效的判斷，並在第一時間為公司處理法律爭議與所需",
   },
 ];
 

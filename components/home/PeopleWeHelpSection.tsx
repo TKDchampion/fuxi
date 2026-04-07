@@ -4,15 +4,15 @@ import Image from "next/image";
 const items = [
   {
     title: "刑事陪同偵訊",
-    desc: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.",
+    desc: "在第一時間為您提供有效的辯護策略與建議，並陪同每一位當事人一起經歷所有流程與面對困境。",
   },
   {
     title: "訴訟與非訟案件委托",
-    desc: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.",
+    desc: "本所專業團隊在不同領域均有相當之實務經驗，各類型訴訟與非訟業務均由本所專業團隊為您協助。",
   },
   {
     title: "企業法律顧問",
-    desc: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.",
+    desc: "協助各大企業建立內部制度，並在遇有法律問題時立即提供協助，本所將全力維護您的商譽！",
   },
 ];
 
