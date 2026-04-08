@@ -56,7 +56,7 @@ export default function PeopleWeHelpSection() {
                     <h3 className="text-lg font-bold text-[#1a1a2e] mb-2">
                       {item.title}
                     </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <p className="text-gray-600 text-sm leading-relaxed text-justify">
                       {item.desc}
                     </p>
                   </div>

@@ -7,6 +7,7 @@ import { useEffect } from "react";
 export interface PersonDetail {
   type: "person";
   img?: string;
+  backgroundPosition?: string;
   name: string;
   role: string;
   intro: string;

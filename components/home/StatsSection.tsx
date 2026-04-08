@@ -3,10 +3,9 @@
 import { useEffect, useRef, useState } from "react";
 
 const stats = [
-  { number: 60, label: "服務客戶" },
-  { number: 60, label: "刑事案件處理" },
-  { number: 60, label: "民事案件處理" },
-  { number: 60, label: "勝訴案件" },
+  { number: 100, suffix: "", label: "服務客戶" },
+  { number: 100, suffix: "", label: "經手案件" },
+  { number: 7500, suffix: "萬", label: "累計爭取利益" },
 ];
 
 function useCountUp(target: number, isVisible: boolean, duration = 2000) {
@@ -31,10 +30,12 @@ function useCountUp(target: number, isVisible: boolean, duration = 2000) {
 
 function StatItem({
   number,
+  suffix,
   label,
   isVisible,
 }: {
   number: number;
+  suffix: string;
   label: string;
   isVisible: boolean;
 }) {
@@ -42,7 +43,8 @@ function StatItem({
   return (
     <div className="text-center px-6">
       <strong className="block text-4xl md:text-5xl font-bold text-white mb-2">
-        {count.toLocaleString()}+
+        {count.toLocaleString()}
+        {suffix}+
       </strong>
       <span className="text-gray-300 text-sm uppercase tracking-wider">
         {label}
@@ -76,23 +78,24 @@ export default function StatsSection() {
       }}>
       <div className="absolute inset-0 bg-[#1a1a2e]/80" />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-center gap-12">
+        <div className="flex flex-col lg:flex-row items-center gap-8">
           {/* Heading */}
-          <div className="lg:w-4/12">
+          <div className="lg:w-2/12">
             <span className="block text-xs font-bold uppercase tracking-[3px] text-[#b99566] mb-3">
               Some
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white">
+            <h2 className="text-3xl md:text-2xl font-bold text-white">
               實際數據
             </h2>
           </div>
 
           {/* Counters */}
-          <div className="lg:w-8/12 grid grid-cols-2 lg:grid-cols-4 gap-8 w-full">
+          <div className="lg:w-10/12 grid grid-cols-1 sm:grid-cols-3 gap-4 w-full">
             {stats.map((s) => (
               <StatItem
                 key={s.label}
                 number={s.number}
+                suffix={s.suffix}
                 label={s.label}
                 isVisible={isVisible}
               />

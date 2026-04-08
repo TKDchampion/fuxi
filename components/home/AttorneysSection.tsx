@@ -7,6 +7,7 @@ const attorneys: PersonDetail[] = [
   {
     type: "person",
     img: "/sheng-blue.jpg",
+    backgroundPosition: "center -60px",
     name: "王昱翔",
     role: "主持律師",
     intro:
@@ -31,6 +32,7 @@ const attorneys: PersonDetail[] = [
   {
     type: "person",
     img: "/daqing.jpg",
+    backgroundPosition: "center -30px",
     name: "劉大慶",
     role: "合作律師",
     intro:
@@ -54,12 +56,12 @@ const attorneys: PersonDetail[] = [
     role: "金融顧問",
     intro:
       "具備深厚金融市場實務背景，專精於財務規劃與風險評估，為委託人提供法律與金融交叉領域的專業諮詢服務。",
-    background: "待填",
+    background: "【經歷】\n曾擔任銀行高階經理人(協理）",
     expertise: ["財務規劃", "金融法規", "投資風險", "資本市場"],
   },
   {
     type: "person",
-    img: "",
+    img: "/giant.jpg",
     name: "王俊淵",
     role: "軟體工程師",
     intro:
@@ -102,7 +104,8 @@ export default function AttorneysSection() {
                       className="absolute inset-0 bg-cover bg-top group-hover:scale-105 transition-transform duration-500"
                       style={{
                         backgroundImage: `url(${a.img})`,
-                        backgroundPosition: a.img === "/sheng-blue.jpg" ? "center -30px" : "center top",
+                        backgroundPosition:
+                          a.backgroundPosition ?? "center top",
                       }}
                     />
                   ) : (
