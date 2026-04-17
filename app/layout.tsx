@@ -11,6 +11,10 @@ const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://www.fuxilaw.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+  },
   title: {
     default: "伏曦法律事務所｜伏於法理，曦於正義",
     template: "%s｜伏曦法律事務所",
