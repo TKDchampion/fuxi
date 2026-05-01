@@ -63,7 +63,7 @@ const attorneys: PersonDetail[] = [
     type: "person",
     img: "/giant.jpg",
     name: "王俊淵",
-    role: "軟體工程師",
+    role: "法律科技顧問",
     intro:
       "8年軟體系統開發建置經驗，以技術力提升法律服務效能，致力打造安全、高效的數位法律服務平台。",
     background:
